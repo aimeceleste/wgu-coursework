@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="789.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="c482.ViewControllerFolder.ModifyProductScreenController">
+    <children>
+        <TableView fx:id="tvModifyProductAdd" layoutX="346.0" layoutY="65.0" prefHeight="150.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="tvModifyProductAddIDColumn" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="tvModifyProductAddNameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="tvModifyProductAddInvColumn" prefWidth="100.0" text="Inv." />
+                <TableColumn fx:id="tvModifyProductAddPriceColumn" prefWidth="100.0" text="Price" />
+            </columns>
+        </TableView>
+        <TableView fx:id="tvModifyProductDelete" layoutX="346.0" layoutY="269.0" prefHeight="150.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="tvModifyProductDeleteIDColumn" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="tvModifyProductDeleteNameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="tvModifyProductDeleteInvColumn" prefWidth="100.0" text="Inv." />
+                <TableColumn fx:id="tvModifyProductDeletePriceColumn" prefWidth="100.0" text="Price" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblModifyProductScreen" layoutX="37.0" layoutY="28.0" text="Modify Product">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnModifyProductSearch" layoutX="617.0" layoutY="29.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="60.0" text="Search" />
+        <TextField fx:id="txtModifyProductSearch" layoutX="469.0" layoutY="29.0" prefHeight="25.0" prefWidth="140.0" />
+        <Button fx:id="btnModifyProductAdd" layoutX="686.0" layoutY="221.0" mnemonicParsing="false" onAction="#add" prefHeight="25.0" prefWidth="60.0" text="Add" />
+        <Button fx:id="btnModifyProductDelete" layoutX="686.0" layoutY="425.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+        <Button fx:id="btnModifyProductCancel" layoutX="686.0" layoutY="461.0" mnemonicParsing="false" onAction="#cancelModifyProducts" prefHeight="25.0" prefWidth="60.0" text="Cancel" />
+        <Button fx:id="btnModifyProductSave" layoutX="617.0" layoutY="461.0" mnemonicParsing="false" onAction="#saveModifyProducts" prefHeight="25.0" prefWidth="60.0" text="Save" />
+        <Label fx:id="lblModifyProductID" layoutX="20.0" layoutY="118.0" text="ID">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblModifyProductIDNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="77.0" layoutY="108.0" prefHeight="40.0" prefWidth="150.0" style="-fx-border-width: 1; -fx-border-color: black; -fx-border-style: solid; -fx-padding: 5;">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblModifyProductName" layoutX="20.0" layoutY="171.0" text="Name">
+            <font>
+                <Font size="14.0" />
+            </font></Label>
+        <TextField fx:id="txtModifyProductName" layoutX="77.0" layoutY="161.0" prefHeight="40.0" prefWidth="150.0">
+            <font>
+                <Font size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblModifyProductInv" layoutX="20.0" layoutY="224.0" text="Inv">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyProductInv" layoutX="77.0" layoutY="214.0" prefHeight="40.0" prefWidth="150.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblModifyProductPrice" layoutX="20.0" layoutY="277.0" text="Price">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyProductPrice" layoutX="77.0" layoutY="267.0" prefHeight="40.0" prefWidth="150.0">
+            <font>
+                <Font size="14.0" />
+            </font></TextField>
+        <Label fx:id="lblModifyProductMin" layoutX="20.0" layoutY="330.0" text="Min">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyProductMin" layoutX="77.0" layoutY="320.0" prefHeight="40.0" prefWidth="100.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lblModifyProductMax" layoutX="187.0" layoutY="330.0" text="Max">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtModifyProductMax" layoutX="226.0" layoutY="320.0" prefHeight="40.0" prefWidth="100.0">
+            <font>
+                <Font size="14.0" />
+            </font></TextField>
+      <Button fx:id="btnAddProductClear" layoutX="686.0" layoutY="29.0" mnemonicParsing="false" onAction="#clearSearch" prefHeight="25.0" prefWidth="60.0" text="Clear" />
+    </children>
+</AnchorPane>
