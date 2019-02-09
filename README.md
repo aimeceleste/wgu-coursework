@@ -1,5 +1,5 @@
 # wgu-coursework
-Archive of my WGU coursework, specifically the final projects for various classes
+Archive of my WGU coursework, specifically the final projects for selected classes
 
 * C169 - Scripting and Programming Applications - Java student roster  
 * C188 - Software Engineering - No software, just a business requirements doc for a CRM system
